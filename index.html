@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="show"></h1>
+
+
+</body>
+    <script>
+document.onclick=function show(e) {
+    // console.log(Date())
+    let currentTime= new Date()
+    let hours= currentTime.getHours();
+    let min= currentTime.getMinutes();
+    let sec= currentTime.getSeconds();
+    document.getElementById("show").innerHTML="pageX = " + e.pageX + " | pageY = " + e.pageY + " | Time = "+ hours +":"+  min+":" + sec
+    
+    
+        // console.log(e.pageX);
+        // console.log(e.pageY);
+    }
+
+    </script>
+</html>
